@@ -3,15 +3,13 @@
 // ---------------------
 
 function max (num1, num2) {
-    if (num1 > num2) {
-        return num1;
-    } else if (num1 < num2) {
-        return num2;
-    } else {
-        return "The numbers are equal";
+    if (num1 > num2).then {
+       return num1;
     }
-}
-max(12, 32);
+    else if (num2 > num1).then {
+        return num2;
+    }
+};
 
 // ---------------------
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
@@ -27,8 +25,8 @@ function maxOfThree (num1, num2, num3) {
     } else {
         return "There is a tie"
     }
-}
-maxOfThree (221, 333, 450);
+};
+//maxOfThree (221, 333, 450);
 
 // ---------------------
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
@@ -36,14 +34,17 @@ maxOfThree (221, 333, 450);
 
 function isVowel (char) {
 var vowels = ["a", "e", "i", "o", "u"];
-    for (i = 0; i < vowels.length; i++) {
-        if (char === vowels[i] {
-            return "true";
-        } 
+    for (var i = 0; i < vowels.length; i++) {
+        if (char === vowels[i]) {
+            return true;
+        } else {
+        return false;
+        }
     }
-  return "false";
-}
-isVowel ("a");
+};
+            
+            
+//isVowel ("a");
 
 // ---------------------
 // Write a function translate() that will translate a text into "rÃ¶varsprÃ¥ket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
@@ -59,7 +60,7 @@ var vowels = ["a", "e", "i", "o", "u"];
         
     }
 }
-translate ("The Iron Yard");
+//translate ("The Iron Yard");
 
 // ---------------------
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
